@@ -52,6 +52,6 @@ def apply(job_id):
     return render_template('apply_job.html', form=form)
 
 if __name__ == '__main__':
-    with app.app_context():  # Create an application context
-        db.create_all()  # Create database tables
+    with app.app_context(): 
+        db.create_all()  
     app.run(debug=True)
